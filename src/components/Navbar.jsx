@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Logo from '../assets/logo.png'
+import { Link } from "react-router-dom";
 export default function Navbar() {
     const [navbar, setNavbar] = useState(false);
 
@@ -8,10 +9,10 @@ export default function Navbar() {
             <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
                 <div>
                     <div className="flex items-center justify-between py-3 md:py-5 md:block">
-                        <div className="flex items-center text-[#fff]">
+                        <Link to='/' className="flex items-center text-[#fff]">
                             <img src={Logo} alt="Mogana Law" />
                             <p className="text-xl">Mogana Law</p>
-                        </div>
+                        </Link>
                         <div className="md:hidden">
                             <button
                                 className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
@@ -57,10 +58,10 @@ export default function Navbar() {
                     >
                         <ul className="items-center text-center md:text-left justify-center text-xl space-y-8 md:flex md:space-x-6 md:space-y-0">
                             <li className="text-white hover:text-indigo-200">
-                                <a href="javascript:void(0)">Home</a>
+                                <Link to='/'>Home</Link>
                             </li>
                             <li className="text-white hover:text-indigo-200">
-                                <a href="javascript:void(0)">Blog</a>
+                                <Link to='/pengacara'>Blog</Link>
                             </li>
                         </ul>
 

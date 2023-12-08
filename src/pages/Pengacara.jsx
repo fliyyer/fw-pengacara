@@ -1,9 +1,18 @@
 import React from 'react'
+import Navbar from '../components/Navbar'
+import Header from '../elements/pengacara/Header'
+import SelectPengacara from '../elements/pengacara/SelectPengacara'
+import Footer from '../components/Footer'
 
 const Pengacara = () => {
     return (
         <div>
-            <h1>Pengacara</h1>
+            <Navbar />
+            <div className='max-w-5xl mx-auto'>
+                <Header />
+                <SelectPengacara />
+            </div>
+            <Footer />
         </div>
     )
 }
