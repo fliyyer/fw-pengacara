@@ -58,7 +58,7 @@ const TopLawyers = () => {
         <Slider
           ref={sliderRef}
           {...settings}
-          className="w-full flex items-center px-4 md:px-0">
+          className="w-full flex items-center px-[60px] md:px-0">
           <CardLawyers
             name="Alexa Rachel"
             image={Lawyers1}
@@ -91,12 +91,12 @@ const TopLawyers = () => {
           />
         </Slider>
         <button
-          className="absolute top-1/2 left-4 lg:-left-16 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full"
+          className="absolute top-1/2 left-4 md:left-0 lg:-left-16 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full"
           onClick={() => sliderRef.current.slickPrev()}>
           <FaArrowLeft />
         </button>
         <button
-          className="absolute top-1/2 right-4 lg:-right-10 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full"
+          className="absolute top-1/2 right-4 md:right-0 lg:-right-10 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full"
           onClick={() => sliderRef.current.slickNext()}>
           <FaArrowRight />
         </button>
